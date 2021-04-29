@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco Cat</title>
+    <style>
+
+        /* Version 2 - Add whiskers using linear gradients */
+        
+        body{ 
+            margin: 0;
+            padding: 0;
+            background-color: #daeaf0;
+        }
+
+        .taco-cat {
+            height: 250px;
+            width: 500px;
+            background-color: #e7af00;
+            border-radius: 250px 250px 25px 25px;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+        .taco-cat::before {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: transparent;
+            z-index: 3;
+            left: 250px;   
+            top: 100px;
+            box-shadow: 105px 9px 0 -7px #fff,
+            115px -5px 0 -2px #fff,
+            -125px -5px 0 -2px #fff,
+            -135px 9px 0 -7px #fff,
+            110px 0 0 10px #000,
+            -130px -0 0 10px #000,
+            -20px 0 0 0 #e7af00,
+            0 3px 0 0 black,
+            -20px 3px 0 0 black,
+            -10px 10px 0 0 red;
+        }
+
+        .taco-cat::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            z-index: -1;
+            background-color: transparent;
+            background-position: -25px 195px;
+            border-radius: 5px;
+            box-shadow: 65px 30px 0 -10px #000, 
+            65px 30px 0 -1px #e7af00,
+            385px 30px 0 -10px #000,
+            385px 30px 0 -1px #e7af00,
+            -3px 180px 0 1px #983d00,
+            -2px 165px 0 5px #983d00,
+            5px 150px 0 5px #983d00,
+            8px 140px 0 5px #34a62f,
+            12px 130px 0 5px #34a62f,
+            17px 120px 0 5px #34a62f,
+            22px 110px 0 5px #34a62f,
+            30px 100px 0 4px #34a62f,
+            35px 90px 0 4px #ff000d,
+            40px 80px 0 4px #ff000d,
+            45px 70px 0 4px #ff000d,
+            55px 60px 0 4px #ff000d,
+            395px 60px 0 4px #ff000d,
+            400px 70px 0 4px #ff000d,
+            405px 80px 0 4px #ff000d,
+            410px 90px 0 4px #ff000d,
+            415px 100px 0 5px #34a62f,
+            425px 110px 0 5px #34a62f,
+            430px 120px 0 5px #34a62f,
+            435px 130px 0 5px #34a62f,
+            445px 140px 0 4px #983d00,
+            450px 150px 0 4px #983d00,
+            452px 155px 0 4px #983d00,
+            455px 160px 0 4px #983d00,
+            450px 170px 0 4px #983d00;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="taco-cat"></div>
+</body>
+</html>
