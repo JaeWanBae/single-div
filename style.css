@@ -2,6 +2,10 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         
 *, *:before, *:after { box-sizing: inherit; }
 
+body {
+    margin: 0;
+}
+
 .position {
     position: relative;
     height: 100vh;
@@ -553,4 +557,11 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     452px 155px 0 4px #983d00,
     455px 160px 0 4px #983d00,
     450px 170px 0 4px #983d00;
+}
+
+@media (max-width: 420px) {
+    .speakerBackground,
+    .catBackground {
+        display: none;
+    }
 }
